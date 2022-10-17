@@ -1,0 +1,185 @@
+<link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet" type='text/css'>
+<style>
+.prompt{
+    display: none !important;
+}
+
+.rendered_html pre {
+    border: 1px solid #f0f6f9 !important;
+}
+
+.rendered_html pre, .rendered_html code {
+    background-color: #d3d8db !important;
+    padding: 1% !important;
+    line-height: 200% !important;
+    border-radius: 10px !important;
+}
+
+div.cell{
+        width:85% !important;
+        margin-left:5% !important;
+        /*margin-right:auto;*/
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: 'Oswald', sans-serif; !important;
+        font-style: oblique !important;
+    }
+    div.text_cell_render{
+        font-family: 'Raleway', sans-serif; !important;
+        line-height: 135% !important;
+        font-size: 120% !important;
+        width:100%;/*600px;*/
+        /*margin-left:auto;*/
+        /*margin-right:auto;*/
+    }
+    .CodeMirror{
+            font-family: "Source Code Pro" !important;
+			font-size: 100% !important;
+    }
+    .text_cell_render p{
+        text-align: justify !important;
+    }
+    .text_cell_render h1 {
+        font-weight: 200 !important;
+		line-height: 100% !important;
+        color:#47597A !important;
+        margin-bottom: 10.em !important;
+        margin-top: 50.em !important;
+        padding-bottom: 50.em !important;
+        padding-top: 50.em !important;
+        display: block !important;
+        font-size: 300% !important;
+        text-align: center !important;
+        border-bottom: 1px solid #47597A !important;
+        border-top: 1px solid #47597A !important;
+    }
+    .text_cell_render h2 {
+        font-weight: 200 !important;
+	line-height: 100% !important;
+        color:#47597A !important;
+        margin-bottom: 0.5em !important;
+        margin-top: 0.5em !important;
+        display: block !important;
+        font-size: 200% !important;
+        border-bottom: 1px solid #47597A !important;
+    }
+    .text_cell_render h3 {
+        font-weight: 200 !important;
+	line-height: 100% !important;
+        color:#47597A !important;
+        margin-bottom: 0.5em !important;
+        margin-top: 0.5em !important;
+        display: block !important;
+        font-size: 150% !important;
+    }
+    .text_cell_render h4 {
+        font-style: italic !important;
+        font-weight: bold !important;
+	line-height: 100% !important;
+        color:#47597A !important;
+        display: block !important;
+        font-size: 100% !important;
+    }
+    .text_cell_render h5 {
+        font-weight: 200 !important;
+	line-height: 100% !important;
+        color:#47597A !important;
+        margin-bottom: 0.5em !important;
+        margin-top: 0.5em !important;
+        display: block !important;
+        font-size: 100% !important;
+    }
+    .text_cell_render ul {
+	list-style-type: disc !important;
+	line-height: 2;
+	/*color:#47597A !important;*/
+    }
+    .important{
+        color: rgb( 240, 20, 20 ) !important;
+        }
+    .Abstract {
+	text-align: justify;
+	background-color: #d6edf9;
+	border-left: 5px solid #47597A;
+	padding: 0.5em;
+	margin: 0  150px 0 150px;
+    }
+    .Not {
+	background-color: #d9f7d7;
+	border-left: 5px solid #4a7047;
+	padding: 0.5em;
+    }
+    .Not:before {
+	content: "Notes.";
+	color:#8B0A50;
+	font-weight: bold;
+	font-style: normal;
+    }
+    .Rmk {
+	background-color: #ffffcc;
+	border-left: 5px solid #a90e05;
+	padding: 0.5em;
+    }
+    .Rmk:before {
+	content: "Remark.";
+	color:#a90e05;
+	font-weight: bold;
+	font-style: normal;
+    }
+    .Des {
+	background-color: #dbf1fc;
+	border-left: 5px solid #385487;
+	padding: 0.5em;
+    }
+    .Des:before {
+	content: "Description.";
+	color:#385487;
+	font-weight: bold;
+	font-style: normal;
+    }
+    .Exp {
+	background-color: #dbf1fc;
+	border-left: 5px solid #385487;
+	padding: 0.5em;
+    }
+    .Exp:before {
+	content: "Explanation.";
+	color:#385487;
+	font-weight: bold;
+	font-style: normal;
+    }
+
+/*    .toc-item-num {
+#        display: none;
+#    }
+*/
+    .reveal section img{
+        margin: 0px auto;
+    }
+
+    div.output_area img{
+        display: block;
+        margin: 0px auto;
+    }
+
+</style>
+
+<script>
+MathJax.Hub.Config({
+TeX: {extensions: ["AMSmath.js"] },
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'center', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 4}}
+                }
+        });
+
+
+
+</script>
