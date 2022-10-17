@@ -1,5 +1,5 @@
 import pennylane as qml
-from circuit_stack.gate import GU1, GU2
+from vqc_lite.circuit_stack.gate import GU1, GU2
 
 
 class Block_P:

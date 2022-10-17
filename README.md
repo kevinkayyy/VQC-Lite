@@ -12,14 +12,14 @@ framework Pennylane (https://github.com/PennyLaneAI/pennylane). Both implementat
 functionalities with the same I/O. While the latter is currently more efficiently integrated with Jax for circuit 
 optimization by differentiation, the former provides the additional feature of optimization by sweeping.
 
-Author and Developer: Kevin Shen (www.linkedin.com/in/kevinshen-tum)
+Author and Developer: Kevin Shen -> [Github](https://github.com/kevinkayyy) -> [LinkedIn](https://www.linkedin.com/in/kevinshen-tum)
 
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install VQC-Lite.
 
 ```bash
-pip install VQC-Lite
+pip install vqc_lite
 ```
 
 Use the requirements.txt sheet to install dependencies
@@ -38,9 +38,9 @@ The notebook "experiment" gives an illustrative example application for VQC: upl
 
 ```python
 import numpy as np
-from circuit_stack.circuit_mps import MPS_GU2
-from experiments.expressibility import Expressibility_Evaluation
-from experiments.state_preparation import Compression_Sweeping
+from vqc_lite.circuit_stack import MPS_GU2
+from vqc_lite.experiments import Expressibility_Evaluation
+from vqc_lite.experiments.state_preparation import Compression_Sweeping
 
 # initialize a VQC
 circuit = MPS_GU2(nl=1, nq=4)  # 1 layer of general 2 qubit gates covering 4 qubits
@@ -51,8 +51,8 @@ psi_out = circuit.run_with_param_input(params)  # get output state
 
 # state preparation with VQC
 ghz = np.zeros(4 * [2])  # Let's compress a GHZ state as an example
-ghz[0,0,0,0] = 1 / np.sqrt(2)
-ghz[1,1,1,1] = 1 / np.sqrt(2)
+ghz[0, 0, 0, 0] = 1 / np.sqrt(2)
+ghz[1, 1, 1, 1] = 1 / np.sqrt(2)
 task = Compression_Sweeping(ghz, circuit)
 task.run()
 

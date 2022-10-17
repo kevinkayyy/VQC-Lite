@@ -4,8 +4,8 @@ import numpy as np
 import jax
 import jax.numpy as jnp
 import optax
-from circuit_stack.gate import Haar_Random
-from toolboxes.toolbox_statevector import fidelity
+from vqc_lite.circuit_stack.gate import Haar_Random
+from vqc_lite.toolboxes.toolbox_statevector import fidelity
 
 
 class Compression_Sweeping:

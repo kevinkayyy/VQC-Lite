@@ -5,14 +5,20 @@
 
 Welcome to VQC-Lite's documentation!
 ====================================
+.. toctree::
+
+   README
+
+.. toctree::
+   :glob:
+
+   demo/notebooks/*
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
    modules
-
 
 Indices and tables
 ==================
