@@ -2,3 +2,4 @@ Sphinx
 sphinx-rtd-theme
 nbsphinx
 pandoc
+myst_parser
