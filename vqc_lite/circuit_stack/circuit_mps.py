@@ -1,5 +1,6 @@
 from vqc_lite.circuit_stack.circuit import Circuit
-from .block import *
+from vqc_lite.circuit_stack.layer import *
+from vqc_lite.circuit_stack.block import *
 
 
 class MPS(Circuit):
