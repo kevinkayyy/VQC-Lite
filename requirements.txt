@@ -1,6 +1,7 @@
+numpy
+matplotlib
 pennylane
 jax
 jaxlib
-matplotlib
 optax
 tqdm

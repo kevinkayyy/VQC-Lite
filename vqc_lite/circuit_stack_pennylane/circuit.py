@@ -4,7 +4,7 @@ import copy
 import jax.numpy as jnp
 from jax import jit
 import pennylane as qml
-from vqc_lite.toolboxes.toolbox_statevector import distance, fidelity
+from ..toolboxes.toolbox_statevector import distance, fidelity
 
 
 class Circuit_P:

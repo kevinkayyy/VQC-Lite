@@ -1,8 +1,8 @@
 import numpy as np
 import copy
-from vqc_lite.circuit_stack.gate import *
-from vqc_lite.circuit_stack.layer import Layer
-from vqc_lite.toolboxes.toolbox_statevector import distance, fidelity
+from .gate import *
+from .layer import Layer
+from ..toolboxes.toolbox_statevector import distance, fidelity
 
 
 class Circuit:

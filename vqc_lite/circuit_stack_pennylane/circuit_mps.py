@@ -1,6 +1,6 @@
 import numpy as np
-from vqc_lite.circuit_stack_pennylane.circuit import Circuit_P
-from vqc_lite.circuit_stack_pennylane.block import *
+from .circuit import Circuit_P
+from .block import *
 
 
 class MPS_P(Circuit_P):

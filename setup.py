@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name='vqc_lite',
-    version='0.3.1',
+    version='0.1.0',
     author='Kevin Shen',
     author_email='kevinshen.abcd@gmail.com',
     description='vqc_lite: A reader-friendly object-oriented Python implementation of Variational Quantum Circuits '
@@ -16,5 +16,5 @@ setuptools.setup(
     url='https://github.com/kevinkayyy/VQC-Lite',
     license='Apache-2.0',
     packages=setuptools.find_packages(),
-    install_requires=['pennylane', 'jax', 'jaxlib', 'matplotlib', 'optax', 'tqdm']
+    install_requires=['numpy', 'matplotlib', 'pennylane', 'jax', 'jaxlib',  'optax', 'tqdm']
 )
