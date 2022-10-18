@@ -1,0 +1,3 @@
+recursive-include vqc_lite *.py
+
+include setup.py
