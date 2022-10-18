@@ -38,22 +38,23 @@ The notebook "experiment" gives an illustrative example application for VQC: upl
 
 ```python
 import numpy as np
-from vqc_lite.circuit_stack.circuit_mps import MPS_GU2
+from vqc_lite.circuit_stack_pennylane.circuit_mps import MPS_GU2_P
 from vqc_lite.experiments.expressibility import Expressibility_Evaluation
-from vqc_lite.experiments.state_preparation import Compression_Sweeping
+from vqc_lite.experiments.state_preparation import Compression_Adam
 
 # initialize a VQC
-circuit = MPS_GU2(nl=1, nq=4)  # 1 layer of general 2 qubit gates covering 4 qubits
+circuit = MPS_GU2_P(nl=1, nq=4)  # 1 layer of general 2 qubit gates covering 4 qubits
 
 # execute a VQC
 params = np.random.uniform(size=45)  # 3 gates, each with 15 parameters
+params = circuit.params_to_proper_shape(params)  # reshape the parameters
 psi_out = circuit.run_with_param_input(params)  # get output state
 
 # state preparation with VQC
 ghz = np.zeros(4 * [2])  # Let's compress a GHZ state as an example
 ghz[0, 0, 0, 0] = 1 / np.sqrt(2)
 ghz[1, 1, 1, 1] = 1 / np.sqrt(2)
-task = Compression_Sweeping(ghz, circuit)
+task = Compression_Adam(ghz, circuit, steps=1000)  # use Adam optimizer
 task.run()
 
 # evaluate expressibility

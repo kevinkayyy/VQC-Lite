@@ -85,7 +85,6 @@ class Compression_Sweeping:
 
         while step < self.steps and absolute_error > self.ea and relative_error > self.er:
             step += 1
-            print(step)
 
             for ig in self.circuit.get_where_parametrized():
 
