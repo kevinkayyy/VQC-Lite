@@ -14,6 +14,7 @@ optimization by differentiation, the former provides the additional feature of o
 
 Author and Developer: Kevin Shen -> [Github](https://github.com/kevinkayyy) -> [LinkedIn](https://www.linkedin.com/in/kevinshen-tum)
 
+![Image](demo/images/vqc.jpeg)
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install VQC-Lite.
@@ -30,11 +31,15 @@ pip install -r requirements.txt
 
 ## Usage
 
-Please read the Jupyter Notebooks under the folder demo/ for more details. There contains 2 notebooks.
+For full documentation, please visit [Documentation](https://vqc-lite.readthedocs.io/en/latest/).
 
-The notebook "circuit" gives an introduction to the VQC circuit stacks.
+To start with, you may read the two notebooks there. 
 
-The notebook "experiment" gives an illustrative example application for VQC: uploading an image onto a quantum computer.
+The notebook [An Introduction to VQC](https://vqc-lite.readthedocs.io/en/latest/demo/notebooks/circuit.html) gives an introduction to the VQC circuit stacks. 
+
+The notebook [Experiments with VQC](https://vqc-lite.readthedocs.io/en/latest/demo/notebooks/experiment.html) gives an illustrative example application for VQC: uploading an image onto a quantum computer.
+
+Below are some examples of how to use VQC-Lite modules.
 
 ```python
 import numpy as np
