@@ -1,4 +1,4 @@
-VQC-Lite
+vqc_lite
 ========
 
 .. toctree::
