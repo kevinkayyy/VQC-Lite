@@ -3,10 +3,3 @@ sphinx-rtd-theme
 nbsphinx
 pandoc
 myst_parser
-numpy
-matplotlib
-pennylane
-jax
-jaxlib
-optax
-tqdm
