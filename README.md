@@ -8,8 +8,8 @@ just a few hundred lines of code and full documentation, one could see how a VQC
 elementary unitary gates all the way up to a differentiable and optimizable quantum circuit. 
 
 VQC-Lite provides two alternative ways to construct VQCs, one involving only standard numpy functions, and one using the 
-framework Pennylane (https://github.com/PennyLaneAI/pennylane). Both implementations give VQCs of similar 
-functionalities with the same I/O. While the latter is currently more efficiently integrated with Jax for circuit 
+framework [Pennylane](https://github.com/PennyLaneAI/pennylane). Both implementations give VQCs of similar 
+functionalities with the same I/O. While the latter is currently more efficiently integrated with [Jax](https://github.com/google/jax) for circuit 
 optimization by differentiation, the former provides the additional feature of optimization by sweeping.
 
 Author and Developer: Kevin Shen -> [Github](https://github.com/kevinkayyy) -> [LinkedIn](https://www.linkedin.com/in/kevinshen-tum)
@@ -31,13 +31,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-For full documentation, please visit [Documentation](https://vqc-lite.readthedocs.io/en/latest/).
+For full documentation, please visit [Documentation](https://vqc-lite.readthedocs.io/en/latest/). To start with, you may read the two notebooks there. 
 
-To start with, you may read the two notebooks there. 
-
-The notebook [An Introduction to VQC](https://vqc-lite.readthedocs.io/en/latest/demo/notebooks/circuit.html) gives an introduction to the VQC circuit stacks. 
-
-The notebook [Experiments with VQC](https://vqc-lite.readthedocs.io/en/latest/demo/notebooks/experiment.html) gives an illustrative example application for VQC: uploading an image onto a quantum computer.
+1. The notebook [An Introduction to VQC](https://vqc-lite.readthedocs.io/en/latest/demo/notebooks/circuit.html) gives an introduction to the VQC circuit stacks. 
+2. The notebook [Experiments with VQC](https://vqc-lite.readthedocs.io/en/latest/demo/notebooks/experiment.html) gives an illustrative example application for VQC: uploading a picture to a quantum computer.
 
 Below are some examples of how to use VQC-Lite modules.
 
