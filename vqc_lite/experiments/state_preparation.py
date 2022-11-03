@@ -3,9 +3,13 @@ import time
 import numpy as np
 import jax
 import jax.numpy as jnp
+from jax.config import config
 import optax
 from ..circuit_stack.gate import Haar_Random
 from ..toolboxes.toolbox_statevector import fidelity
+
+
+config.update("jax_enable_x64", True)
 
 
 class Compression_Sweeping:
